@@ -1,0 +1,8 @@
+title: Michael Soto
+description: Computer Science ePortfolio, Southern New Hampshire University. Focused on secure AI software engineering.
+theme: jekyll-theme-minimal
+lang: en-US
+
+exclude:
+  - README.md
+  - artifacts/

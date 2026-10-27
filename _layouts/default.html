@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="author" content="Michael Soto">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+        <nav aria-label="ePortfolio sections">
+          <ul>
+            <li><a href="{{ "/#professional-self-assessment" | relative_url }}">Professional Self-Assessment</a></li>
+            <li><a href="{{ "/#code-review" | relative_url }}">Code Review</a></li>
+            <li><a href="{{ "/#enhancement-one-software-design-and-engineering" | relative_url }}">Software Design and Engineering</a></li>
+            <li><a href="{{ "/#enhancement-two-algorithms-and-data-structures" | relative_url }}">Algorithms and Data Structures</a></li>
+            <li><a href="{{ "/#enhancement-three-databases" | relative_url }}">Databases</a></li>
+          </ul>
+        </nav>
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+      </header>
+      <main id="main">
+        <section>
+          {{ content }}
+        </section>
+      </main>
+      <footer>
+        <p><small>Hosted on GitHub Pages. Theme by <a href="https://github.com/orderedlist">orderedlist</a>.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
